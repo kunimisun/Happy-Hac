@@ -103,6 +103,10 @@ color:#3D5CDB;
 
 
 @media(max-width:450px) {
+  .title{
+    width: 100vw;
+    margin: 0 auto;
+  }
   .title img {
     width: 70vw;
     margin: auto;
@@ -110,15 +114,16 @@ color:#3D5CDB;
 
   .title p{
     font-size: 20px;
-     text-align: center;
+    text-align: center;
+    
   }
   header nav{
     display: 30px;
   }
 
 .titletext{
-  padding-top: 350px;
-   text-align: center;
+  /* padding-top: 350px; */
+  text-align: center;
   
 }
 
@@ -199,6 +204,7 @@ color:#3D5CDB;
     margin-bottom: 30px;
     flex-wrap: wrap;
     font-size: 13px;
+
     /* width: 100%; */
     
   }
@@ -444,7 +450,6 @@ color:#3D5CDB;
 
   .map {
     position: relative;
-    /* width: 100%; */
     height: 0;
     padding-top: 75%;
   }
@@ -453,9 +458,9 @@ color:#3D5CDB;
     position: absolute;
         top: 0px;
         width: 170%;
-        height: 170%;
+        height: 165%;
         
-        left: -77px;
+        left: -75px;
         /* width: 175%;
         height: 170%; */ 
   }
