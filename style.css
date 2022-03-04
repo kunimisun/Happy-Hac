@@ -5,27 +5,10 @@
   font-family:  sans-serif;
 }  
 
-/* 
-@font-face {
-  font-family: "Futura";
-  src: url(fonts/Futura-Med.ttf) format("truetype");
-  font-weight: bold;
-}
 
-@font-face {
-  font-family: "Futura";
-  src: url(fonts/Futura-Boo.ttf) format("truetype");
-  font-weight: normal;
-}
 
-@font-face {
-  font-family: "Futura";
-  src: url(fonts/Futura-LigObl.ttf) format("truetype");
-  font-style: italic;
-  font-weight: lighter;
-}
 
- */
+
 
 
 h2 {
@@ -214,7 +197,15 @@ color:#3D5CDB;
     margin-bottom: 30px;
     flex-wrap: wrap;
     font-size: 13px;
+    /* width: 100%; */
     
+  }
+
+  .contents p{
+    padding-top: 20px;
+    position: relative;
+    left: -35px;
+    width: 140%;
   }
 
   .order3 {
@@ -226,7 +217,7 @@ color:#3D5CDB;
 
 
 .contents img {
-  width: 200px;
+  width: 90%;
   display: flex;
   margin: 0px 30px;
  
@@ -448,19 +439,31 @@ color:#3D5CDB;
 
 
 @media(max-width: 450px) {
+
   .map {
     position: relative;
-    width: 100%;
+    /* width: 100%; */
     height: 0;
     padding-top: 75%;
   }
 
-  .map iframe {
+  iframe {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+        top: 0px;
+        width: 167%;
+        height: 165%;
+        
+        left: -77px;
+        /* width: 175%;
+        height: 170%; */ 
+  }
+
+
+  footer{
+    position: relative;
+    padding-top: 30%;
+    padding-bottom:none;
+    height: none;
   }
 }
 
@@ -470,12 +473,12 @@ color:#3D5CDB;
 
 
 footer{
-height: 180px;
+height: 10px;
 color:#3D5CDB;
 line-height: 80px;
 text-align: center;
 font-size: 14px;
-letter-spacing: 2px;
+padding-bottom: 70px;
 }
 
 
