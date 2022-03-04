@@ -61,7 +61,7 @@ jQuery(function($) {
     
             // effect_posがthis_posを超えたとき、エフェクトが発動
             $('.scroll-fade').each( function() {
-                var this_pos = $(this).offset().top/1.7;
+                var this_pos = $(this).offset().top/2;
                 if ( effect_pos > this_pos ) {
                     $(this).css({
                         opacity: 1,
