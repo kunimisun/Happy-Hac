@@ -1,280 +1,488 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family:  sans-serif;
+}  
 
 
-   
-<!DOCTYPE html>
-<html lang="ja">
 
-<head>
-    <meta charset="utf-8">
-    <title>Happy hack</title>
+
+
+
+
+h2 {
+  text-align: center;
+  font-family: "Futura";
+  font-weight: bold;
+  font-size: 40pt;
+  color: #3D5CDB;
+  padding: 40px;
+}
+
+@media(max-width: 450px) {
+  h2 {
+    font-size: 200%;
+  }
+}
+
+
+
+
+header {
+  background-size: cover;
+  background-position: center center;
+  
+}
+
+.title{
+  
+  width: 100vw;
+  height: 100vh;
+  background-position:center center;
+  background-size: cover;
+  text-align: center;
+ 
+  }
+
+
+
+  .titletext{
+  
+    padding-top: 250px;
+    text-align: center;
+  }
+
+  
+
+  
+  .title img {
+    width: 900px;
+    margin: auto; 
     
-    <link href="slick/slick.css" rel="stylesheet" type="text/css">
-    <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <meta property="og:title" content="Happy Hack">
-    <meta property="og:image" content="images/logo.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Happy Hack" />
-    <meta property="og:description" content="Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-
-<body>
-<!-- header -->
- <header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">Introduction</a></li>
-            <li><a href="#favorite">Courses</a></li>
-            <li><a href="#work">Images</a></li>
-            <li><a href="#contact">Access</a></li>
-        </ul>
-</nav>
-
-
-    <div class="title"> 
-        
-        <div class="titletext">
-        <h1><img src="images/logo.png" alt=""></h1>
-        <p>We are Web Designers.</p>
-        </div>
-    </div> 
- </header>
-
-
-<!-- intro -->
+  }
   
 
-   <section class="intro" id="introduction">
-        <div class="scroll-fade">
-
-            <h2>Introduction</h2>
-            
-
-                <div class="contents" >
-                    <img src="images/introduction_001.jpg" alt="" class="order1">
-
-                    <div class="content" class="order2">
-                        <p>
-                            Happy Hackはいまをときめく若者がITを活用したものづくりに取り組める環境を提供しています。<br>
-                            特に、Webデザイン領域のプログラミングを学習している生徒が一番積極的に活動しています。<br>
-                            誰でも最初は初心者。それを一番知っている我々がプログラミングへの第一歩を踏み出すお手伝いをさせていただきます。</p>
-                        <a href="#introduction">会員登録</a>
-                    </div>
-
-                </div>
-
-
-                <div class="contents">
-                    <div class="content order4">
-                            <p> 
-                                Happy Hackでは「楽しさ」と「真剣さ」をモットーにプログラミングを学びます。コースは全部で7つ準備をしています。<br>
-                                WebデザインからWebサービス、3DゲームやiPhoneアプリまで幅広くお楽しみいただけます。<br>
-                                自分の想いをカタチにして発信することをぜひこの場で体験してみてください。世界が変わって見えるかもしれません。 </p> 
-
-                    
-                            <a href="#introduction" style="background-color:#ffbf00";>会員登録 </a>
-                    </div>
-                    
-                    <div class="order3">
-                        <img src="images/introduction_002.jpg" alt="" >
-                    </div>
-                    
-                    
-                    
-                </div>
-
-            </div>              
-        
-    </section>
+.title p{
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  color: #fff;
+  font-family: "Futura";
+  font-style: italic;
+}
 
 
 
 
 
+header nav {
+   position:absolute;
+  right: 0; 
+}
+
+header ul{
+  display: flex;
+  margin: 0 50px; 
+}
+
+header a{
+  display: block;
+  padding: 30px 15px 0;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+  font-family: "Futura";
+  font-size: 20pt;
+}
+
+header a:hover{
+color:#3D5CDB;
+}
 
 
 
+@media(max-width:450px) {
+  .title img {
+    width: 70vw;
+    margin: auto;
+  }
 
-<!-- course -->
+  .title p{
+    font-size: 20px;
+  }
+  header nav{
+    display: 30px;
+  }
 
-<section id="courses" >
-
-  <div id="particles-js"></div>
-
-  <div class="scroll-fade">
+.titletext{
+  padding-top: 350px;
   
-        <h2>Courses</h2>
-       
+}
 
-        <div class="course">
-            <div class="course-container">
+  h2{
+    font-size: 40px;
 
+  }
 
-                <div class="course_info" id="html">
-                    <div class="course_img">
-                        <img src="./images/html.png" alt="">
-                    </div>
-                    <h3>HTMLコース</h3>
-                    <a href="#courses" style="background-color: #F16529;">このコースを受ける</a>
-                </div>
-
-
-
-
-                <div class="course_info" id="css">
-                    <div class="course_img">
-                        <img src="./images/css.png" alt="">
-                    </div>
-                    <h3>CSSコース</h3>
-                    <a href="#courses" style="background-color: #29A9DF;">このコースを受ける</a>
-                </div>
-
-
-
-
-
-                <div class="course_info" id="unity">
-                    <div class="course_img">
-                        <img src="./images/unity.png" alt="">
-                    </div>
-                    <h3>Unityコース</h3>
-                    <a href="#courses" style="background-color: #333333;">このコースを受ける</a>
-                </div>
-
-
-
-
-
-                <div class="course_info" id="ruby">
-                    <div class="course_img">
-                        <img src="./images/ruby.png" alt="">
-                    </div>
-                    <h3>Rubyコース</h3>
-                    <a href="#courses" style="background-color: #FF5252;">このコースを受ける</a>
-                </div>
+  nav {
+    display: none;
+  }
+}
 
 
 
 
 
 
-                <div class="course_info" id="js">
-                    <div class="course_img">
-                        <img src="./images/js.png" alt="">
-                    </div>
-                    <h3>JavaScriptコース</h3>
-                    <a href="#courses" style="background-color: #FED700;">このコースを受ける</a>
-                </div>
 
 
 
 
 
-
-                <div class="course_info" id="swift">
-                    <div class="course_img">
-                        <img src="./images/swift.png" alt="">
-                    </div>
-                    <h3>Swiftコース</h3>
-                    <a href="#courses" style="background-color: #FE7536;">このコースを受ける</a>
-                </div>
+/* intro */
 
 
+.contents{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ 
+}
 
 
+.contents img {
+ width: 500px;
+ display: flex;
+ margin: 50px 30px;
 
-                <div class="course_info" id="go">
-                    <div class="course_img">
-                        <img src="./images/go.png" alt="">
-                    </div>
-                    <h3>Goコース</h3>
-                    <a href="#courses" style="background-color: #73CEDD;">このコースを受ける</a>
-                </div>
+}
 
-
-             </div>
-
-         </div>
-       
-        </div>
-
-  
-
-</section>
-
-
-
-    
-<!-- images -->
-
-<section id="slick">
-  <div class="scroll-fade">
-  <h2>Images</h2>
-  <div class="slider">
-    <div>
-      <div class="image">
-        <img src="./images/background1.jpg" />
-      </div>
-    </div>
-    <div>
-      <div class="image">
-        <img src="./images/background2.jpg" />
-      </div>
-    </div>
-    <div>
-      <div class="image">
-        <img src="./images/background3.jpg" />
-      </div>
-    </div>
-    <div>
-      <div class="image">
-        <img src="./images/background4.jpg" />
-      </div>
-    </div>
-    <div>
-      <div class="image">
-        <img src="./images/background5.jpg" />
-      </div>
-    </div>
-  </div>
-
-</div>
-</section>
-
-   
+.content {
+ width: 400px;
+ line-height: 2;
+ margin: 0px 80px;
  
 
+}
 
-  <section class="access">
-    <div class="scroll-fade">
-      <h2>Access</h2>
-      <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.3131287759848!2d135.4902599151171!3d34.697281280435355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e6f359905ed7%3A0x9fec1659611f776f!2zTGlmZSBpcyBUZWNoISDlpKfpmKrjgqrjg5XjgqPjgrk!5e0!3m2!1sja!2sjp!4v1645954886761!5m2!1sja!2sjp"
-     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    </div></div>
-    </section>
-       
- <footer>@2019 Happy Hack Inc.</footer>
+.content a {
+ display: block;
+ margin: 30px auto;
+ text-decoration: none;
+ width: 170px;
+ height: 40px;
+ background-color: #3D5CDB;
+ color: #ffffff;
+ border-radius: 12px;
+ text-align: center;
+ line-height: 40px;
+ font-size: 15pt;
+ font-weight: bold;
+}
+
+.content a:hover {
+ box-shadow: 0 2px 15px 2px rgba(133, 140, 142, 0.4);
+}
+
+
+
+@media(max-width:450px) {
+
+    
+  .contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    font-size: 13px;
+    /* width: 100%; */
+    
+  }
+
+  .contents p{
+    padding-top: 20px;
+    position: relative;
+    left: -35px;
+    width: 140%;
+  }
+
+  .order3 {
+    order: 3;
+  }
+  .order4 {
+    order: 4;
+  }
+
+
+.contents img {
+  width: 90%;
+  display: flex;
+  margin: 0px 30px;
+ 
+
+}
+
+.contents a{
+  font-size: 15px;
+}
+
+
+
+
+}
+
+
+
+#courses {
+  background-color: rgba(186, 213, 245, 0.6);
+  z-index: 1;
+  position:relative;
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  display: block;
+  z-index: -1;
+}
+
+
+.course {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: 768px) {
+  .course-container {
+    width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-container {
+    width: 1170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.course-container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.course_info {
+  width: 180px;
+  height: 280px;
+  background-color: #ffffff;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
+}
+
+
+.course_img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.course_img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.course_info h3 {
+  font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, sans-serif;
+  font-size: 11pt;
+  text-align: center;
+  margin: 10px;
+  padding-top: 20px;
+  color: #183c61;
+}
+
+
+.course_info a {
+  display: block;
+  margin: 15px auto;
+  text-decoration: none;
+  width: 170px;
+  height: 40px;
+  background-color: #ffbf00;
+  color: #ffffff;
+  border-radius: 12px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+.course_info a:hover {
+  box-shadow: 0 2px 15px 2px rgba(133, 140, 142, 0.4);
+}
+
+@media(max-width: 450px) {
+
+  .course_info {
+    width: 140px;
+    height: 200px;
+    background-color: #ffffff;
+    margin-top: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(106, 137, 152, 0.2);
+    padding: 10px;
+  }
+
+  .course_img {
+    width: 90px;
+    height: 90px;
+    margin: 10px auto 0;
+  }
+
+
+  .course_info h3 {
+    font-family: 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', Meiryo, メイリオ, sans-serif;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .course_info a {
+    display: block;
+    margin: 15px auto;
+    text-decoration: none;
+    width: 100%;
+    height: 40px;
+    background-color: #ffbf00;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .course_info a:hover {
+    box-shadow: 0 2px 15px 2px rgba(133, 140, 142, 0.4);
+  }
+}
+
+
+
+#slick {
+  margin-bottom: 50px;
+}
+
+.slider {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.slider img {
+  height: auto;
+  width: 100%;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+  color:rgb(0, 0, 0);
+  border-radius: 50%;
+  background-color:rgb(255, 255, 255);
+  
+}
+
+.slick-dots {
+  bottom: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
 
 
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+.access {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+}
 
- <script src="script.js"></script>
- <script src="jquery.bgswitcher.js"></script>
- <script src="particles.min.js"></script>
- <script src="setting.js"></script>
- <script type="text/javascript" src="slick.min.js"></script>
- <script src="slick-settings.js"></script>
-</body>
 
-</html>
+@media(max-width: 450px) {
+
+  .map {
+    position: relative;
+    /* width: 100%; */
+    height: 0;
+    padding-top: 75%;
+  }
+
+  iframe {
+    position: absolute;
+        top: 0px;
+        width: 167%;
+        height: 165%;
+        
+        left: -77px;
+        /* width: 175%;
+        height: 170%; */ 
+  }
+
+
+  footer{
+    position: relative;
+    padding-top: 30%;
+    padding-bottom:none;
+    height: none;
+  }
+}
+
+
+
+
+
+
+footer{
+height: 10px;
+color:#3D5CDB;
+line-height: 80px;
+text-align: center;
+font-size: 14px;
+padding-bottom: 70px;
+}
+
+
+
+
+
+
