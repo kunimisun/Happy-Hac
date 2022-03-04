@@ -110,6 +110,7 @@ color:#3D5CDB;
 
   .title p{
     font-size: 20px;
+     text-align: center;
   }
   header nav{
     display: 30px;
@@ -117,6 +118,7 @@ color:#3D5CDB;
 
 .titletext{
   padding-top: 350px;
+   text-align: center;
   
 }
 
