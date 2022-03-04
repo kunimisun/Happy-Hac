@@ -447,17 +447,23 @@ color:#3D5CDB;
 
 
 @media(max-width: 450px) {
+.access{
+  display: block;
+}
 
   .map {
     position: relative;
+    width: 100%;
     height: 0;
     padding-top: 75%;
   }
 
-  iframe {
-position: absolute;
-        top: 0px;
-        width: 100%;
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
 
