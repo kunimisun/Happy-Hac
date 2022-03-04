@@ -455,14 +455,9 @@ color:#3D5CDB;
   }
 
   iframe {
-    position: absolute;
+position: absolute;
         top: 0px;
-        width: 170%;
-        height: 165%;
-        
-        left: -75px;
-        /* width: 175%;
-        height: 170%; */ 
+        width: 100%;
   }
 
 
