@@ -42,18 +42,13 @@ header {
   background-position:center center;
   background-size: cover;
   text-align: center;
- 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
-
-
-  .titletext{
-  
-    padding-top: 250px;
-    text-align: center;
-  }
-
-  
 
   
   .title img {
@@ -103,10 +98,7 @@ color:#3D5CDB;
 
 
 @media(max-width:450px) {
-  .title{
-    width: 100vw;
-    margin: 0 auto;
-  }
+  
   .title img {
     width: 70vw;
     margin: auto;
